@@ -1,0 +1,40 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base">
+      <div slot="title">
+          Imperation Create
+      </div>
+      <div slot="actions">
+        
+      </div>
+      <div slot="footer">
+        <lightning-button 
+          variant="brand"
+          label="Create Account" 
+          onclick={handleClick} 
+        ></lightning-button>
+      </div>
+      <div>
+        <!-- Card Body  -->
+        <lightning-input 
+          type="text"
+          label="Account Name"
+          onchange={handleName}
+        ></lightning-input>
+        <lightning-input 
+          type="text"
+          label="Account Phone"
+          onchange={handlePhone}
+        ></lightning-input>
+        <lightning-input 
+          type="text"
+          label="Account Fax"
+          onchange={handleFax}
+        ></lightning-input>
+        <lightning-input 
+          type="text"
+          label="Account Industry"
+          onchange={handleIndustry}
+        ></lightning-input>
+      </div>
+    </lightning-card>
+</template>
